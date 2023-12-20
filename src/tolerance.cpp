@@ -1,16 +1,14 @@
-#include <iostream>
-#include <cstdint>
+#include "tolerance.hpp"
+#include "utility.hpp"
 #include <cmath>
+#include <cstdint>
+#include <iostream>
 #include <string>
-#include "../include/tolerance.hpp"
-#include "../include/utility.hpp"
 
 Tolerance::Tolerance() {}
 
-Tolerance::Tolerance(double tol, double h, double fb)
-    : tol(tol), h(h), fb(fb)
-{
-    checkPositive(tol, "tol");
-    checkPositive(h, "h");
-    checkPositive(fb, "fb");
+Tolerance::Tolerance(double tol, double h, double fb) : tol(tol), h(h), fb(fb) {
+  checkPositive(tol, "tol");
+  checkPositive(h, "h");
+  checkPositive(fb, "fb");
 }
