@@ -1,7 +1,7 @@
 #ifndef LEVEL_HPP
 #define LEVEL_HPP
 
-#include "internal_domain.hpp"
+#include "internal/domain.hpp"
 #include "results.hpp"
 #include <vector>
 
